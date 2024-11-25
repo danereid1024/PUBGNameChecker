@@ -11,8 +11,11 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [RouterOutlet, HttpClientModule, FormsModule, CommonModule],
   template: `
+  <div class="title">
   <h1>PUBG Name Checker</h1>
-  <div>
+  </div>
+  
+  <div class="search">
     <pre>
       <code>
       {{nameData?.data?.username | json}}
@@ -20,7 +23,10 @@ import { CommonModule } from '@angular/common';
     </pre>
   </div>
   <input type="text" [(ngModel)]="id" name="id">
-  <button (click)="getID()">Get PUBG Name</button>
+  <div class="button">
+  <button (click)="getID()">Check</button>
+  </div>
+  
   `,
   styles: `
   h1 {
