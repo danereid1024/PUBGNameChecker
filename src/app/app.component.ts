@@ -7,10 +7,9 @@ import { CommonModule } from '@angular/common';
 
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, HttpClientModule, FormsModule, CommonModule],
-  template: `
+    selector: 'app-root',
+    imports: [RouterOutlet, HttpClientModule, FormsModule, CommonModule],
+    template: `
   <div class="title">
   <h1>PUBG Name Checker</h1>
   </div>
@@ -28,11 +27,11 @@ import { CommonModule } from '@angular/common';
   </div>
   
   `,
-  styles: `
+    styles: `
   h1 {
     color:red
   }
-  ` 
+  `
 })
 export class AppComponent {
 
